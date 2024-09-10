@@ -19,6 +19,7 @@ class DocumentList(APIView):
         """
         Retrieve all documents.
         """
+        print(DocumentService.get_all_documents())
         return JsonResponse(DocumentService.get_all_documents())
 
     def post(self, request):
